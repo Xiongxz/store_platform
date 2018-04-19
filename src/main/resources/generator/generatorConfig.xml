@@ -29,9 +29,15 @@
 
         <!--<table tableName="user_info"></table>
         <table tableName="test"></table>
-        <table tableName="tests"></table>-->
+        <table tableName="tests"></table>
         <table tableName="ep_commodityinfo"></table>
         <table tableName="ep_commoditytype"></table>
-        <table tableName="ep_commodityunit"></table>
+        <table tableName="ep_commodityunit"></table>-->
+        <table tableName="sys_userinfo"></table>
+        <table tableName="sys_role"></table>
+        <table tableName="sys_menuinfo"></table>
+        <table tableName="sys_role_menu"></table>
+        <table tableName="sys_user_role"></table>
+
     </context>
 </generatorConfiguration>

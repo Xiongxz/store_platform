@@ -1,6 +1,6 @@
 #端口
 server:
-  port: 8008
+  port: 8888
 #数据源
 spring:
   datasource:
