@@ -28,19 +28,17 @@ public class MenuinfoController {
     public ZYJSONResult saveMenuInfo() {
         logger.info("************添加菜单测试数据**************");
         List<SysMenuinfo> list = new ArrayList<>();
-        Collection<SysMenuinfo>  c= new ArrayList<>();
+        Collection<SysMenuinfo> c = new ArrayList<>();
         SysMenuinfo sysMenuinfo = null;
-        for (int i = 0; i <= 10; i++) {
-            sysMenuinfo = new SysMenuinfo();
-            sysMenuinfo.setMenuId(SidWorker.nextSid());
-            sysMenuinfo.setMenuFatherid(0);
-            sysMenuinfo.setMenuUrl("/url/index.html");
-            sysMenuinfo.setMenuName("系统");
-            list.add(sysMenuinfo);
-            c.addAll(list);
-        }
-        list.addAll(c);
-        this.systemService.saveListSysMenuinfo(list);
-        return ZYJSONResult.ok(list);
+        sysMenuinfo = new SysMenuinfo();
+        sysMenuinfo.setMenuId(SidWorker.nextSid());
+        sysMenuinfo.setMenuFatherid(0);
+        sysMenuinfo.setMenuUrl("/url/index.html");
+        sysMenuinfo.setMenuName("系统");
+        list.add(sysMenuinfo);
+        //c.addAll(list);
+        //list.addAll(c);
+        //this.systemService.saveSysMenuinfo();
+        return ZYJSONResult.ok();
     }
 }

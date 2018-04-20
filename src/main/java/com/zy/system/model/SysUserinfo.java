@@ -46,7 +46,7 @@ public class SysUserinfo {
      * 手机号码
      */
     @Column(name = "phone_number")
-    private Integer phoneNumber;
+    private String phoneNumber;
 
     /**
      * 创建日期
@@ -178,7 +178,7 @@ public class SysUserinfo {
      *
      * @return phone_number - 手机号码
      */
-    public Integer getPhoneNumber() {
+    public String getPhoneNumber() {
         return phoneNumber;
     }
 
@@ -187,7 +187,7 @@ public class SysUserinfo {
      *
      * @param phoneNumber 手机号码
      */
-    public void setPhoneNumber(Integer phoneNumber) {
+    public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 
